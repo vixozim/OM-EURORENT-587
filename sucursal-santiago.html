@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+   <title>Sucursal Santiago | Euro Rent a Car</title>
+   
+    <meta name="robots" content="index follow">
+    <meta name="googlebot" content="index follow">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    
+    <meta name="description" content="Euro Rent a Car">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800|Poppins:300i,400,300,700,400i,500|Ubuntu:300i,400,300,700,400i,500|Raleway:400,500,600,700" rel="stylesheet">
+    <!-- CSS Files -->
+
+
+    <!-- Owl Carousel Assets -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/travlez-jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/jquery.gomap-1.3.3.min.js"></script>
+	  <script type="text/javascript" src="js/sticky-sidebar.js"></script>
+
+</head>
+
+<body>
+      <!-- MODAL LOGINS -->
+	
+	<div id="mis-reservas" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h5 class="text-uppercase italic text-medium font-weight-600 trn">Mis Reservas </h5>
+                                </div>
+               
+              <div class="row justify-content-md-center">
+
+                <div class="col-lg-4">
+                    <div class="padding-30px background-white border-1 border-grey-1">
+                        <form>
+                            <div class="form-group">
+                                <label  class="col-form-label"><strong class=" trn">Correo Electrónico</strong></label>
+                                <input type="email" class="form-control rounded-0 apiom_email" id="" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-form-label"><strong class=" trn">Numero de Confirmación</strong></label>
+                                <input type="text" class="form-control rounded-0" id="apiom_confirmation_number" placeholder="">
+                            </div>
+                            
+                            <div class="form-group">
+                                <a href="#" id="apiom_submit_mis_reservas" class="btn btn-primary btn-block rounded-0 background-main-color trn">Ir a la reserva</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="margin-bottom-20px margin-top-20px">
+                        <i class="fa fa-ticket margin-right-10px" aria-hidden="true"></i> <strong class="text-uppercase trn">¿No sabes cual es tu Nº de confirmación?</strong>
+                        <span class="d-block text-grey-2 trn">Te enviaremos tu Nº de reserva al mail registrado en nuestro sistema</span>
+						<span class="d-block"><a  class="text-grey-2 collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse1" class=" trn">ENVIAR EMAIL</a></span>
+							<div class="  panel-collapse collapse" id="collapse3"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+						 <div class="form-group">
+                                
+                                <input type="text" class="form-control rounded-0" id="inputPassword3" placeholder="Email">
+                            </div>
+							 <div class="form-group">
+                                <a href="#" class="btn btn-primary btn-block rounded-0 background-main-color trn">Enviar</a>
+                            </div>
+                    </div>
+					 </div>
+
+                   
+                   
+                </div>
+				
+				
+
+            </div>
+            </div>
+        </div>
+    </div>
+	 </div>
+	 
+	 
+	 
+	 
+	 <div id="iniciar-sesion" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h5 class="text-uppercase italic text-medium font-weight-600 trn">Iniciar Sesión </h5>
+                                </div>
+               
+              <div class="row justify-content-md-center">
+
+                <div class="col-lg-4">
+                    <div class="padding-30px background-white border-1 border-grey-1">
+                        <form>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-form-label"><strong class=" trn">Correo Electrónico</strong></label>
+                                <input type="email" class="form-control rounded-0 apiom_email" id="" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-form-label"><strong class=" trn">Contraseña</strong></label>
+                                <input type="password" class="form-control rounded-0" id="apiom_password" placeholder="Contraseña">
+                            </div>
+                            
+                            <div class="form-group">
+                                <a href="#" id="apiom_submit_login" class="btn btn-primary btn-block rounded-0 background-main-color trn">Ingresar</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="margin-bottom-20px margin-top-20px">
+                        <i class="fa fa-key margin-right-10px" aria-hidden="true"></i> <strong class="text-uppercase trn">¿Olvidó su contraseña?</strong>
+                        <span class="d-block text-grey-2 trn">Te enviaremos tu contraseña al mail registrado en nuestro sistema.</span>
+						<span class="d-block"><a  class="text-grey-2 collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1  trn">ENVIAR EMAIL</a></span>
+							<div class="  panel-collapse collapse" id="collapse1"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+						 <div class="form-group">
+                                
+                                <input type="text" class="form-control rounded-0" id="inputPassword3" placeholder="Email">
+                            </div>
+							 <div class="form-group">
+                                <a href="#" class="btn btn-primary btn-block rounded-0 background-main-color trn">Enviar</a>
+                            </div>
+                    </div>
+					 </div>
+
+                    <div class="margin-bottom-15px padding-bottom-15px border-bottom-1 border-grey-2">
+                        <i class="fa fa-user margin-right-10px" aria-hidden="true"></i> <strong class="text-uppercase collapsed trn" >¿Primera vez? </strong>
+                        <span class="d-block"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse1" class="text-grey-2 trn">REGISTRATE</a></span>
+                    </div>
+                   
+                </div>
+				
+				 <div class="col-lg-6 col-md-6 panel-collapse collapse" id="collapse2"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+                     <div class="margin-top-20px padding-30px background-white border-1 border-grey-1">
+					<form>
+					<strong class="text-uppercase trn">REGISTRARSE</strong>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label   class=" trn">Nombre</label>
+                                <input type="text" class="form-control"   placeholder="Nombre">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label   class=" trn">Apellido</label>
+                                <input type="email" class="form-control"   placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label  class=" trn">Email</label>
+                            <input type="text" class="form-control"   placeholder="Email">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label   class=" trn">Contraseña</label>
+                                <input type="password" class="form-control"   placeholder="Contraseña">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label   class=" trn">Repetir Contraseña</label>
+                                <input type="password" class="form-control"   placeholder="Contraseña">
+                            </div>
+                        </div>
+                        <a href="#" class="btn-sm btn-lg btn-block background-main-color text-white text-center font-weight-bold text-uppercase rounded-0 padding-15px trn">Enviar</a>
+                    </form>
+					 </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+	 </div>
+	 
+	 
+	 
+<!-- END MODAL LOGINS -->
+   
+   <!-- Header  -->
+    <header class="background-white box-shadow">
+        <div class="background-second-color padding-tb-5px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    
+                    <div class="col-lg-9 position-inherit">
+                        <ul class="user-area list-inline float-right margin-0px text-white">
+                           
+                            <li class="list-inline-item "><a data-toggle="modal" data-target="#mis-reservas" href="#"><i class="fa fa-user-plus padding-right-5px"></i><span  class=" trn">Mis Reservas</span></a></li>
+							 <li class="list-inline-item  padding-right-10px trn"><a data-toggle="modal" data-target="#iniciar-sesion" href="#"><i class="fa fa-lock padding-right-5px"></i><span  class=" trn">Iniciar Sesión</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-output">
+            <div class="container header-in">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a id="logo" href="index.html" class="d-inline-block margin-tb-10px"><img src="images/logo.png" alt=""></a>
+                        <a class="mobile-toggle" href="#"><i class="fa fa-navicon"></i></a>
+                    </div>
+                    <div class="col-lg-9 position-inherit">
+					<ul id="menu-main" class="nav-menu float-right link-padding-tb-20px dropdown-dark">
+						<li class="active "><a href="index.html"><span  class=" trn">Home</span></a></li>
+						<li><a href="nosotros.html" class="trn" ><span  class=" trn">Nosotros</span></a></li>
+                       
+						<li><a href="oficinas.html" class="trn" ><span  class=" trn">Oficinas</span></a></li>
+						<li><a href="flota.html" class="trn" ><span  class=" trn">Flota</span></a></li>
+						<li style="display: none;"><a   id="apiom_logout" ><span class="trn">Cerrar Sesión</span></a></li>
+							
+						<li class="has-dropdown"><a class="apiom_ul_monedas"   >$ARS</a>
+						<ul id="apiom_ulMonedaUsuario" class="sub-menu" role="menu">
+								<li class="convert" data-to-currency="ARS" id="ARS"><a>$ (ARS)</a></li>
+								<li class="convert" data-to-currency="USD" id="USD"><a>US$ (USD)</a></li>
+								<li class="convert" data-to-currency="EUR" value="EUR" id="EUR"><a>€ (EUR)</a></li>
+								<li class="convert" data-to-currency="BRL" value="BRL" id="BRL"><a>R$ (BRL)</a></li>
+								<li class="convert" data-to-currency="UYU" value="UYU" id="UYU"><a>$ (UYU)</a></li>
+								
+							</ul>
+						
+						</li>
+							<li class="has-dropdown"><a   id="idiomaSelector"><img class="bg-esp"  src="images/flag.png" alt=""></a>
+						<ul class="sub-menu" role="menu">
+								 <li><a class="lang_selector" id="idiomaES" data-value="es"
+                onclick="setIdioma('ES', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing"
+                    src="images/flag.png" alt=""><span  class=" trn"> Español</span></a></li>
+
+                    <li><a   class="lang_selector" id="idiomaEN" data-value="en" onclick="setIdioma('EN', true);$('#idiomaSelector').html(getIdiomaCompleto())"  ><img class="bg-bra" src="images/flag-uk.png" alt=""> <span  class=" trn">Inglés</span></a></li>
+                    <li><a   class="lang_selector" id="idiomaPT" data-value="pt" onclick="setIdioma('PT', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing trn" src="images/flag-br.png" alt=""> <span  class=" trn">Portugués</span></a></li>
+								
+							</ul>
+						
+						</li>
+					</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- // Header  -->
+   <!-- Page title --->
+    <div id="page-title" class="text-grey  background-red" >
+        <div class="text-center">
+            <div class="container z-index-2 position-relative">
+                <h5 class="font-weight-700 italic text-uppercase padding-tb-40px margin-0px trn">Sucursal Santiago</h5>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Page title --->
+
+
+   <!-- page output -->
+    <div class="padding-tb-40px background-light-grey">
+        <div class="container">
+            <div class="row">
+
+                <!-- sidebar -->
+               
+
+              
+				
+				 <div class="col-lg-4 sticky-sidebar">
+                    <!--  Search Desktop-->
+                    <div class="widget">
+                        <h4 class="widget-title clearfix"><span class="trn">Buscar Auto</span></h4>
+                        <div class="search-filter">
+                             <div class="form-group ">
+                                <label class="trn">Ciudad desde</label>
+                                <div class="destination"><select id="apiom_ciudad_desde"  type="text" class="input-text full-width" placeholder="Ciudad">
+								 <option class="trn">Ciudad</option>
+                                                                    <option>Bariloche</option>
+                                                                    <option>Salta</option>
+								
+								</select></div>
+                            </div>
+							<div class="form-group ">
+                                <label class="trn">Ciudad hasta</label>
+                                <div class="destination"><select id="apiom_ciudad_hasta"  type="text" class="input-text full-width" placeholder="Ciudad">
+								 <option class="trn">Ciudad</option>
+                                                                    <option>Bariloche</option>
+                                                                    <option>Salta</option>
+								
+								</select></div>
+                            </div>
+                            <div class="form-group ">
+                                <label class="trn">Fecha desde</label>
+                                <div class="date-input"><input id="apiom_fecha_desde" type="text" class="input-text datepicker full-width" value="25/5/2021"></div>
+                            </div>
+							 <div class="form-group ">
+                                <label class="trn">Hora desde</label>
+                               <div class="time-input2"><input id="apiom_hora_desde" type="time" class="input-text  full-width"  ></div>
+                            </div>
+                            <div class="form-group ">
+                                <label class="trn">Fecha hasta</label>
+                                <div class="date-input"><input id="apiom_fecha_hasta" type="text" class="input-text datepicker full-width" value="25/5/2021"></div>
+                            </div>
+							 <div class="form-group ">
+                                <label class="trn">Hora hasta</label>
+                               <div class="time-input3"><input id="apiom_hora_hasta"  type="time" class="input-text  full-width" ></div>
+                            </div>
+                            <a href="#" id="apiom_submit_search"  class="btn-sm btn-lg btn-block background-main-color text-white text-center text-uppercase font-weight-600 margin-top-30px padding-7px trn"> Buscar auto</a>
+                        </div>
+                    </div>
+					</div>
+                    <!-- //   Search Desktop -->
+                <!-- // sidebar -->
+
+                <!--  content -->
+                <div class="col-lg-8 col-md-8 ">
+
+                    <!-- texto -->
+                    <div class="blog-entry background-white border-1 border-grey-1 margin-bottom-35px">
+                      
+                        <div class="padding-30px">
+                          
+                            <h4 class="d-block  text-capitalize  text-dark font-weight-700 margin-tb-10px  trn">Sucursal Santiago</h4>
+							  <div class="meta">
+                                <span class="margin-right-20px text-medium trn">Dirección : <span class="text-red">Hotel Diego de Almagro. Américo Vespucio Oriente 1299, Pudahuel, Santiago</span></span></br>
+                                <span class="margin-right-20px text-medium trn">Teléfono : <span class="text-red"><a href="tel: +56 9 9207 9221">: +56 9 9207 9221 / +56 9 9207 9249 / +56 9 5902 2220 / +56 9 5000 5263</a></span></span></br>
+                                <span class="margin-right-20px text-medium trn">Email : <span class="text-red">aeropuerto.stgo@eurorentacar.cl</span></span></br>
+                                <span class="margin-right-20px text-medium trn">
+                                    Horario De Atención:</br>
+                                    <span class="text-third-color margin-left-20px trn">L-V: 08:00 a 00:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 10:00 a 00:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D y Feriados: 10:00 a 00:00</span> </span>
+                            </div>
+							
+							 <ul class="social_link list-inline">
+							 
+                            <li class="list-inline-item"><a class="facebook" href="https://www.facebook.com/eurorentacar.cl/ " target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                           
+                          
+                            <li class="list-inline-item"><a class="google" href="https://www.instagram.com/eurorentacar_cl"  target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                          
+                        </ul>
+                            <div class="post-entry">
+                                <div class="d-block text-up-small text-grey-4 margin-bottom-15px">
+                                    <p class="text-bold italic text-red trn">LA CAPITAL</p>
+                                    <h5 style="color:#333" class=" trn">SANTIAGO</h5>
+                                   
+                                        <p class=" trn">La ciudad de Santiago es una de las metrópolis más modernas y seguras de Latinoamérica, se conoce también con el nombre de Gran Santiago. Cuenta con increíbles recursos naturales que la rodean y además te ofrece variada actividad cultural, artística y gastronómica ¡No puedes dejar de conocerla!</p>
+                                   
+                                        <img src="images/paisaje6.jpg" width="50%" class="alignright"> 
+                                        <p class=" trn">COSTANERA CENTER</p>
+                                        <p class=" trn">Sky Costanera es el mirador de la Gran Torre Santiago, el edificio más alto de Latinoamérica, este increíble lugar te ofrece una vista en 360° de la capital, a 300 metros de altura desde los pisos 61 y 62 del gigantesco edificio donde verás la ciudad con otros ojos y sentirás el mundo a tus pies.
+                                            ¡Vive una experiencia de categoría mundial!</p>
+									
+                                        <p class=" trn">CERRO SAN CRISTOBAL</p>
+                                        <p class=" trn">Visitar el Cerro San Cristóbal es casi parada obligatoria en Santiago de Chile, es un paseo típico de la ciudad donde podrás disfrutar de una vista panorámica inigualable de la ciudad y de la cordillera de los Andes.
+                                            Es ideal para realizar rutas en bicicleta o trote. Además cuenta con lugares de descanso, camping, pileta, juegos infantiles y zoo.
+                                            ¡No lo dejes pasar! El Desierto Florido es un espectáculo único en el mundo.</p>
+                                        <p class=" trn">BARRIO LASTARRIA Y BELLAS ARTES</p>
+                                        <p class=" trn">Este barrio destaca por su sello de modernidad y vanguardia, ubicado también en el corazón de la capital. Es un sector característico por sus áreas verdes y hermosas casonas del siglo XIX, aunque no solo destaca por su entorno histórico y arquitectónico, sino también por su variada oferta gastronómica y cultural, cuenta con museos, cafés, restaurantes, cines, librerías, teatros, ferias de antigüedades, cine , galerías de arte y alojamiento. ¡Una joya capitalina que no puedes dejar de visitar!</p>
+
+                                        <p class=" trn">CENTRO CÍVICO</p>
+                                        <p class=" trn">El Barrio Cívico es un imperdible si visitas la ciudad de Santiago ya que representa el corazón de la República Chilena. Es un sector altamente consolidado, uno de los ejemplos urbanos más destacados de la ciudad, todas sus construcciones son de corte moderno y de altura homogénea, con un destacado valor histórico y arquitectónico. El eje principal comprende, de Norte a Sur, la Plaza de la Constitución desde calle Agustinas, La Moneda, la Plaza de la Ciudadanía, el Paseo Bulnes, terminando en el Parque Almagro.Un hermoso lugar para disfrutar de su arquitectura, además de restaurantes, cafeterías y bares ¡Vas a querer fotografiarlo!</p>
+                                        <p class=" trn">PARQUE DE LAS ESCULTURAS</p>
+                                        <p class=" trn">Si te gusta el contraste entre lo artistístico y la ciudad, el Parque de las Esculturas es el lugar idóneo para pasear y relajarse.Es un museo al aire libre, en él se exhiben más de 30 obras de connotados artistas chilenos. Además es ideal para hacer picnic, andar en bicicleta y dar un paseo en caminerías.</p>
+                                        <p class=" trn">CERRO SANTA LUCÍA</p>
+                                        <p class=" trn">Es un parque público urbano ubicado en el corazón de la ciudad de Santiago; es un ícono de la ciudad, visitada por muchos turistas nacionales y extranjeros. Cuenta con jardines, terrazas y varios miradores donde se puede apreciar una hermosa vista de la ciudad y la cordillera. Además, se realizan tours bilingües gratuitos los días domingo y lunes.¡Excelente lugar para conocer historia!</p>
+                                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // texto -->
+					
+					
+
+                    <!--  map  -->
+                    <div class="background-white border-1 border-grey-1 margin-tb-35px padding-30px">
+					  <h4 class="table-title margin-bottom-30px  trn"><span class="trn">Donde estamos</span></h4>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208.11208230565083!2d-70.78201255942407!3d-33.428632438823406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d0366b9725d1%3A0x24d2d09bfc4c1246!2sHotel%20Diego%20de%20Almagro%20Aeropuerto!5e0!3m2!1ses!2sar!4v1673378763743!5m2!1ses!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <!-- // map  -->
+
+
+                   
+
+                  
+
+
+                </div>
+                <!-- //  content -->
+
+            </div>
+        </div>
+    </div>
+    <!-- //  page output -->
+
+
+
+   <!-- Footer -->
+ <footer class="text-center text-lg-left">
+    <div class="container">
+        <div class="row padding-tb-30px">
+            <div class="col-lg-6 sm-mb-35px">
+                <div class="about">
+                    <div class="logo margin-bottom-20px"><a href="index.html"><img src="images/logo-blanco.png" alt=""></a></div>
+                    <p class="trn">El arriendo de autos representa mayor eficiencia y rentabilidad. Tener flota propia es sinónimo de dinero parado.
+                        Nosotros nos encargamos de todo, tu auto siempre funcionará como uno nuevo, te ofrecemos excelentes beneficios y tarifas de acuerdo a los perfiles de utilización y necesidades de tu empresa.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 sm-mb-35px">
+                <ul class="footer-menu row margin-0px padding-0px list-unstyled">
+                    <li class="col-6  padding-tb-5px"><a href="nosotros.html" class="text-white trn">Nosotros</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="flota.html" class="text-white trn">Flota</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="oficinas.html" class="text-white trn">Oficinas</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="preguntas-frecuentes.html" class="text-white trn">Preguntas Frecuentes</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="terminos-y-condiciones.html" class="text-white trn">Términos & Condiciones</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-iquique.html" class="text-white trn">Sucursal Iquique</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-calama.html" class="text-white trn">Sucursal Calama</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-antofagasta.html" class="text-white trn">Sucursal Antofagasta</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-copiapo.html" class="text-white trn">Sucursal Copiapó</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-la-serena.html" class="text-white trn">Sucursal La Serena</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-Santiago.html" class="text-white trn">Sucursal Santiago</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-concepcion.html" class="text-white trn">Sucursal Concepción</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-puerto-montt.html" class="text-white trn">Sucursal Puerto Montt</a></li>
+                   
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="row padding-tb-10px border-top-11 ">
+            <div class="col-lg-3">
+            
+            </div>
+            <div class="col-lg-6 m-auto">
+                   <p class="text-center"><span class="text-white">Euro Rent a Car</span> | @2023 <span class="trn">Todos los derechos reservados</span></p>
+            </div>
+            <div class="col-lg-3">
+                <ul class="social_link list-inline text-sm-center text-lg-right">
+                    <li class="list-inline-item"><a class="facebook" href="https://www.facebook.com/eurorentacar.cl 
+                        " target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a class="instagram" href="https://www.instagram.com/eurorentacar_cl
+                        " target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    
+                   
+                   
+                </ul>
+                <!-- // Social -->
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+    <!-- // Footer -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

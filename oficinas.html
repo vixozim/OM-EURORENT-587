@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+   <title>Oficinas | Euro Rent a Car</title>
+   
+    <meta name="robots" content="index follow">
+    <meta name="googlebot" content="index follow">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    
+    <meta name="description" content="Euro Rent a Car">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800|Poppins:300i,400,300,700,400i,500|Ubuntu:300i,400,300,700,400i,500|Raleway:400,500,600,700" rel="stylesheet">
+    <!-- CSS Files -->
+
+
+    <!-- Owl Carousel Assets -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/travlez-jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flag-icon.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+   <!-- MODAL LOGINS -->
+	
+	<div id="mis-reservas" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h5 class="text-uppercase italic text-medium font-weight-600 trn">Mis Reservas </h5>
+                                </div>
+               
+              <div class="row justify-content-md-center">
+
+                <div class="col-lg-4">
+                    <div class="padding-30px background-white border-1 border-grey-1">
+                        <form>
+                            <div class="form-group">
+                                <label  class="col-form-label"><strong class=" trn">Correo Electrónico</strong></label>
+                                <input type="email" class="form-control rounded-0 apiom_email" id="" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-form-label"><strong class=" trn">Numero de Confirmación</strong></label>
+                                <input type="text" class="form-control rounded-0" id="apiom_confirmation_number" placeholder="">
+                            </div>
+                            
+                            <div class="form-group">
+                                <a href="#" id="apiom_submit_mis_reservas" class="btn btn-primary btn-block rounded-0 background-main-color trn">Ir a la reserva</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="margin-bottom-20px margin-top-20px">
+                        <i class="fa fa-ticket margin-right-10px" aria-hidden="true"></i> <strong class="text-uppercase trn">¿No sabes cual es tu Nº de confirmación?</strong>
+                        <span class="d-block text-grey-2 trn">Te enviaremos tu Nº de reserva al mail registrado en nuestro sistema</span>
+						<span class="d-block"><a  class="text-grey-2 collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse1" class=" trn">ENVIAR EMAIL</a></span>
+							<div class="  panel-collapse collapse" id="collapse3"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+						 <div class="form-group">
+                                
+                                <input type="text" class="form-control rounded-0" id="inputPassword3" placeholder="Email">
+                            </div>
+							 <div class="form-group">
+                                <a href="#" class="btn btn-primary btn-block rounded-0 background-main-color trn">Enviar</a>
+                            </div>
+                    </div>
+					 </div>
+
+                   
+                   
+                </div>
+				
+				
+
+            </div>
+            </div>
+        </div>
+    </div>
+	 </div>
+	 
+	 
+	 
+	 
+	 <div id="iniciar-sesion" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h5 class="text-uppercase italic text-medium font-weight-600 trn">Iniciar Sesión </h5>
+                                </div>
+               
+              <div class="row justify-content-md-center">
+
+                <div class="col-lg-4">
+                    <div class="padding-30px background-white border-1 border-grey-1">
+                        <form>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-form-label"><strong class=" trn">Correo Electrónico</strong></label>
+                                <input type="email" class="form-control rounded-0 apiom_email" id="" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-form-label"><strong class=" trn">Contraseña</strong></label>
+                                <input type="password" class="form-control rounded-0" id="apiom_password" placeholder="Contraseña">
+                            </div>
+                            
+                            <div class="form-group">
+                                <a href="#" id="apiom_submit_login" class="btn btn-primary btn-block rounded-0 background-main-color trn">Ingresar</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="margin-bottom-20px margin-top-20px">
+                        <i class="fa fa-key margin-right-10px" aria-hidden="true"></i> <strong class="text-uppercase trn">¿Olvidó su contraseña?</strong>
+                        <span class="d-block text-grey-2 trn">Te enviaremos tu contraseña al mail registrado en nuestro sistema.</span>
+						<span class="d-block"><a  class="text-grey-2 collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1  trn">ENVIAR EMAIL</a></span>
+							<div class="  panel-collapse collapse" id="collapse1"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+						 <div class="form-group">
+                                
+                                <input type="text" class="form-control rounded-0" id="inputPassword3" placeholder="Email">
+                            </div>
+							 <div class="form-group">
+                                <a href="#" class="btn btn-primary btn-block rounded-0 background-main-color trn">Enviar</a>
+                            </div>
+                    </div>
+					 </div>
+
+                    <div class="margin-bottom-15px padding-bottom-15px border-bottom-1 border-grey-2">
+                        <i class="fa fa-user margin-right-10px" aria-hidden="true"></i> <strong class="text-uppercase collapsed trn" >¿Primera vez? </strong>
+                        <span class="d-block"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse1" class="text-grey-2 trn">REGISTRATE</a></span>
+                    </div>
+                   
+                </div>
+				
+				 <div class="col-lg-6 col-md-6 panel-collapse collapse" id="collapse2"  role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+                     <div class="margin-top-20px padding-30px background-white border-1 border-grey-1">
+					<form>
+					<strong class="text-uppercase trn">REGISTRARSE</strong>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label   class=" trn">Nombre</label>
+                                <input type="text" class="form-control"   placeholder="Nombre">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label   class=" trn">Apellido</label>
+                                <input type="email" class="form-control"   placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label  class=" trn">Email</label>
+                            <input type="text" class="form-control"   placeholder="Email">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label   class=" trn">Contraseña</label>
+                                <input type="password" class="form-control"   placeholder="Contraseña">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label   class=" trn">Repetir Contraseña</label>
+                                <input type="password" class="form-control"   placeholder="Contraseña">
+                            </div>
+                        </div>
+                        <a href="#" class="btn-sm btn-lg btn-block background-main-color text-white text-center font-weight-bold text-uppercase rounded-0 padding-15px trn">Enviar</a>
+                    </form>
+					 </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+	 </div>
+	 
+	 
+	 
+<!-- END MODAL LOGINS -->
+   
+    <!-- Header  -->
+    <header class="background-white box-shadow">
+        <div class="background-second-color padding-tb-5px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    
+                    <div class="col-lg-9 position-inherit">
+                        <ul class="user-area list-inline float-right margin-0px text-white">
+                           
+                            <li class="list-inline-item "><a data-toggle="modal" data-target="#mis-reservas" href="#"><i class="fa fa-user-plus padding-right-5px"></i><span  class=" trn">Mis Reservas</span></a></li>
+							 <li class="list-inline-item  padding-right-10px trn"><a data-toggle="modal" data-target="#iniciar-sesion" href="#"><i class="fa fa-lock padding-right-5px"></i><span  class=" trn">Iniciar Sesión</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-output">
+            <div class="container header-in">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a id="logo" href="index.html" class="d-inline-block margin-tb-10px"><img src="images/logo.png" alt=""></a>
+                        <a class="mobile-toggle" href="#"><i class="fa fa-navicon"></i></a>
+                    </div>
+                    <div class="col-lg-9 position-inherit">
+					<ul id="menu-main" class="nav-menu float-right link-padding-tb-20px dropdown-dark">
+						<li class="active "><a href="index.html"><span  class=" trn">Home</span></a></li>
+                        <li><a href="nosotros.html" class="trn" ><span  class=" trn">Nosotros</span></a></li>
+                      
+						<li><a href="oficinas.html" class="trn" ><span  class=" trn">Oficinas</span></a></li>
+						<li><a href="flota.html" class="trn" ><span  class=" trn">Flota</span></a></li>
+						<li style="display: none;"><a   id="apiom_logout" ><span class="trn">Cerrar Sesión</span></a></li>
+							
+						<li class="has-dropdown"><a class="apiom_ul_monedas"   >$ARS</a>
+						<ul id="apiom_ulMonedaUsuario" class="sub-menu" role="menu">
+								<li class="convert" data-to-currency="ARS" id="ARS"><a>$ (ARS)</a></li>
+								<li class="convert" data-to-currency="USD" id="USD"><a>US$ (USD)</a></li>
+								<li class="convert" data-to-currency="EUR" value="EUR" id="EUR"><a>€ (EUR)</a></li>
+								<li class="convert" data-to-currency="BRL" value="BRL" id="BRL"><a>R$ (BRL)</a></li>
+								<li class="convert" data-to-currency="UYU" value="UYU" id="UYU"><a>$ (UYU)</a></li>
+								
+							</ul>
+						
+						</li>
+							<li class="has-dropdown"><a   id="idiomaSelector"><img class="bg-esp"  src="images/flag.png" alt=""></a>
+						<ul class="sub-menu" role="menu">
+								 <li><a class="lang_selector" id="idiomaES" data-value="es"
+                onclick="setIdioma('ES', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing"
+                    src="images/flag.png" alt=""><span  class=" trn"> Español</span></a></li>
+
+                    <li><a   class="lang_selector" id="idiomaEN" data-value="en" onclick="setIdioma('EN', true);$('#idiomaSelector').html(getIdiomaCompleto())"  ><img class="bg-bra" src="images/flag-uk.png" alt=""> <span  class=" trn">Inglés</span></a></li>
+                    <li><a   class="lang_selector" id="idiomaPT" data-value="pt" onclick="setIdioma('PT', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing trn" src="images/flag-br.png" alt=""> <span  class=" trn">Portugués</span></a></li>
+								
+							</ul>
+						
+						</li>
+					</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- // Header  -->
+    <!-- // Header  -->
+   <!-- Page title --->
+    <div id="page-title" class="text-grey  background-red" >
+        <div class="text-center">
+            <div class="container z-index-2 position-relative">
+                <h5 class="font-weight-700 italic text-uppercase padding-tb-40px margin-0px trn">Oficinas</h5>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Page title --->
+
+
+   
+
+
+
+
+
+    <div class="padding-tb-80px background-light-grey">
+        <div class="container">
+            <div class="row">
+
+                <!-- oficina -->
+                <div class="col-lg-6 margin-bottom-30px">
+                    <div class="hotel-list background-white border border-grey-1">
+                        <div class="hotel-thum">
+                           
+                            <div class="img-in">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116238.48209513517!2d-70.18004989235054!3d-20.428547865338786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915265b29c1e6b9d%3A0xaaebfcd66393da79!2sEconorent%20Car%20Rental!5e0!3m2!1ses!2sar!4v1673377259167!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div class="padding-40px">
+                            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">IQUIQUE MEET&GREET AEROPUERTO</h4>
+                            <small class="text-uppercase text-extra-small  d-block">
+                                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                                    <span class="text-third-color margin-right-5px trn">Aeropuerto Internacional Diego Aracena</span> </p><br>
+									<p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                                    <span class="text-third-color margin-right-5px"><a href="tel:+56954221198">+56 9 5422 1198</a></span> </p><br>
+									<p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                                    <span class="text-third-color margin-right-5px">aeropuerto.iqq@eurorentacar.cl</span> </p>
+                                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                                        <span class="text-third-color margin-left-20px trn">L-V: 08:30 a 18:30</span><br>
+                                        <span class="text-third-color margin-left-20px trn">S: 09:00 a 20:00</span><br>
+                                        <span class="text-third-color margin-left-20px trn">D y Festivos: 10:00 a 20:00</span> </p>
+                                </small>
+                          
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+
+                <!-- oficina -->
+                <div class="col-lg-6 margin-bottom-30px">
+                    <div class="hotel-list background-white border border-grey-1">
+                        <div class="hotel-thum">
+                           
+                            <div class="img-in">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.3353806392092!2d-70.141233084534!3d-20.24492095340863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91521470dbbb5d75%3A0x364eaa17993fbd98!2sHotel%20Diego%20de%20Almagro%20Iquique!5e0!3m2!1ses!2sar!4v1673377405089!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div class="padding-40px">
+                            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">IQUIQUE CIUDAD</h4>
+                            <small class="text-uppercase text-extra-small  d-block">
+                                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                                    <span class="text-third-color margin-right-5px trn">Hotel Diego de Almagro, Manuel Plaza 2940, Iquique, Tarapacá</span> </p><br>
+									<p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                                    <span class="text-third-color margin-right-5px"><a href="tel:+56954221198">+56 9 5422 1198</a></span> </p><br>
+									<p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                                    <span class="text-third-color margin-right-5px">iquiqueq@eurorentacar.cl</span> </p>
+                                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                                        <span class="text-third-color margin-left-20px trn">L-V: 08:30 a 18:30</span><br>
+                                        <span class="text-third-color margin-left-20px trn">S: 09:00 a 20:00</span><br>
+                                        <span class="text-third-color margin-left-20px trn">D y Festivos: 10:00 a 20:00</span> </p>
+                                </small>
+                          
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+ <!-- oficina -->
+ <div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d774.9361207326272!2d-68.90783570791301!3d-22.49524466112137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scalama%20aeropuerto%20euro%20rent%20a%20car!5e0!3m2!1ses!2sar!4v1673377682694!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">CALAMA MEET&GREET AEROPUERTO</h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px trn">El Aeropuerto El Loa</span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px"><a href="tel:+56 9 9207 9205">+56 9 9207 9205 / +56 9 9207 9226</a></span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px">calama@eurorentacar.cl</span> </p>
+                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                        <span class="text-third-color margin-left-20px trn">L-V: 08:00 a 19:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 09:00 a 16:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D y Festivos: 09:00 a 14:00</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+ <!-- oficina -->
+ <div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.1021820669584!2d-68.92119188449573!3d-22.462794127826875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96ac09ce3d44631d%3A0xdbc130df70672e4!2sHotel%20Diego%20de%20Almagro%20Calama%20Alto%20el%20Loa!5e0!3m2!1ses!2sar!4v1673377761125!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">CALAMA CIUDAD</h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px trn">Hotel Diego de Almagro, Av, La Paz 1675, Calama</span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px"><a href="tel:+56 9 9207 9205">+56 9 9207 9205 / +56 9 9207 9226</a></span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px">calama@eurorentacar.cl</span> </p>
+                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                        <span class="text-third-color margin-left-20px trn">L-V: 08:00 a 19:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 09:00 a 16:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D y Festivos: 09:00 a 14:00</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<!-- oficina -->
+<div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.327509076195!2d-70.44316808447779!3d-23.44864806332597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74e06a7e5e22bfea!2sEURO%20Rent%20a%20Car%20%7C%20Aeropuerto%20Andr%C3%A9s%20Sabella%20Antofagasta!5e0!3m2!1ses!2sar!4v1673377883366!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">ANTOFAGASTA MEET&GREET AEROPUERTO</h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px trn">Aeropuerto Andrés Sabella</span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px"><a href="tel:+56 9 9207 9215">:  +56 9 9207 9215, +56 9 9207 9209</a></span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px">aeropuerto.ant@eurorentacar.cl</span> </p>
+                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                        <span class="text-third-color margin-left-20px trn">L-V: 08:00 a 19:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 09:00 a 16:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D y Festivos: 09:00 a 14:00</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+ <!-- oficina -->
+<div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d456.9451511640894!2d-70.38995934650302!3d-23.62006467955002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96ae2b16e430559b%3A0x9afa50e407791268!2sEURO%20Rent%20a%20Car%20%7C%20Antofagasta%20(Ciudad)!5e0!3m2!1ses!2sar!4v1673377960256!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">ANTOFAGASTA CIUDAD</h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px trn">Centro Comercial PAC5510, Av. Hugo Robles 317, Antofagasta</span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px"><a href="tel:+56 9 9207 9215">:  +56 9 9207 9215, +56 9 9207 9209</a></span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px">aeropuerto.ant@eurorentacar.cl</span> </p>
+                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                        <span class="text-third-color margin-left-20px trn">L-V: 08:00 a 19:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 09:00 a 16:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D y Festivos: 09:00 a 14:00</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+<!-- oficina -->
+<div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1253.9003733806098!2d-70.77378467186918!3d-27.2641431004186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96bd5e52dc8a83a9%3A0x9e3ccc15ee600556!2sAeropuerto%20Desierto%20de%20Atacama%20(CPO)!5e0!3m2!1ses!2sar!4v1673378164081!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">COPIAPÓ MEET&GREET AEROPUERTO</h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px trn">Aeropuerto Desierto de Atacama</span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px"><a href="tel:+56 99207 9256">: +56 99207 9256</a></span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px">aeropuerto.copiapo@eurorentacar.cl</span> </p>
+                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                        <span class="text-third-color margin-left-20px trn">L-V: 08:30 a 18:30</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 09:00 a 14:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D y Festivos: 09:00 a 14:00</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+ <!-- oficina -->
+<div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221.46012881779708!2d-70.342648490116!3d-27.364405918955914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9698038c6317b7cd%3A0x3649c857452bf86c!2sEuro%20Rent%20A%20Car%20S%20A!5e0!3m2!1ses!2sar!4v1673378226220!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">COPIAPÓ CIUDAD</h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px ">Av. Ramón Freire 21.</span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px"><a href="tel:+56 99207 9256">: +56 99207 9256</a></span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px">bcortes@eurorentacar.cl</span> </p>
+                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                        <span class="text-third-color margin-left-20px trn">L-V: 08:30 a 18:30</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 09:00 a 14:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D y Festivos: 09:00 a 14:00</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+<!-- oficina -->
+<div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.158551542532!2d-71.2055115843464!3d-29.91733733233766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691cacfdb6b9601%3A0x586495b34bc691e8!2sAeropuerto%20Internacional%20La%20Florida!5e0!3m2!1ses!2sar!4v1673378418337!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">LA SERENA  MEET&GREET AEROPUERTO</h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px trn">Aeropuerto Internacional La Florida</span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px"><a href="tel:+56 9 9207 9204">: +56 9 9207 9204</a></span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px">laserena@eurorentacar.cl</span> </p>
+                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                        <span class="text-third-color margin-left-20px trn">L-V: 08:30 a 18:30</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 09:00 a 14:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D: Cerrado</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+ <!-- oficina -->
+<div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d216.16019826175514!2d-71.25357445903683!3d-29.90568504011876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAv.%20Francisco%20de%20Aguirre%20No.%202%2C%20C.C%20!5e0!3m2!1ses!2sar!4v1673378507698!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">LA SERENA  CIUDAD</h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px ">Av. Francisco de Aguirre No. 2, C.C Autoshopping.</span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px"><a href="tel:+56 9 9207 9204">: +56 9 9207 9204</a></span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px">laserena@eurorentacar.cl</span> </p>
+                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                        <span class="text-third-color margin-left-20px trn">L-V: 08:30 a 18:30</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 09:00 a 14:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D: Cerrado</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<!-- oficina -->
+<div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208.11208230565083!2d-70.78201255942407!3d-33.428632438823406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d0366b9725d1%3A0x24d2d09bfc4c1246!2sHotel%20Diego%20de%20Almagro%20Aeropuerto!5e0!3m2!1ses!2sar!4v1673378763743!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">SANTIAGO  MEET&GREET AEROPUERTO</h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px trn">Hotel Diego de Almagro. Américo Vespucio Oriente 1299, Pudahuel, Santiago</span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px"><a href="tel: +56 9 9207 9221">: +56 9 9207 9221 / +56 9 9207 9249 / +56 9 5902 2220 / +56 9 5000 5263</a></span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px">aeropuerto.stgo@eurorentacar.cl</span> </p>
+                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                        <span class="text-third-color margin-left-20px trn">L-V: 08:00 a 00:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 10:00 a 00:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D y Feriados: 10:00 a 00:00</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+ <!-- oficina -->
+<div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208.1486818395695!2d-70.56552463988307!3d-33.41336445710011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cee6fe85a061%3A0x2f936f48cdd01244!2sEuro%20Rent%20a%20Car!5e0!3m2!1ses!2sar!4v1673378803414!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">SANTIAGO  CIUDAD</h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px ">Manquehue Sur 760, Las Condes. Santiago.
+                    </span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px"><a href="tel: +56 9 9207 9221">: +56 9 9207 9221 / +56 9 9207 9249 / +56 9 5902 2220 / +56 9 5000 5263</a></span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px">manquehue@eurorentacar.cl</span> </p>
+                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                        <span class="text-third-color margin-left-20px trn">L-V: 08:00 a 19:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 09:00 a 16:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D y Festivos: 09:00 a 14:00</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+<!-- oficina -->
+<div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9303.870106017186!2d-73.07287397550083!3d-36.77604819342869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b514398d6289%3A0xe8ab90b5acc692e2!2sCarriel%20Sur%20International%20Airport!5e0!3m2!1ses!2sar!4v1673379043237!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">CONCEPCIÓN  MEET&GREET AEROPUERTO</h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px trn">Aeropuerto Internacional Carriel Sur</span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px"><a href="tel: +56 9 9207 9231">: +56 9 9207 9231</a></span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px">concepcion@eurorentacar.cl</span> </p>
+                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                        <span class="text-third-color margin-left-20px trn">L-V: 08:30 a 18:30</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 09:00 a 14:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D: Cerrado</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+ <!-- oficina -->
+<div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1597.536212848856!2d-73.06350110528446!3d-36.79281386438134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b50ae8e36827%3A0xbfdafbd1db81a857!2sHotel%20ibis%20Concepci%C3%B3n!5e0!3m2!1ses!2sar!4v1673379088627!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">CONCEPCIÓN  CIUDAD</h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px ">Av. San Andrés 37. Hotel Ibis
+                    </span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px"><a href="tel: +56 9 9207 9231">: +56 9 9207 9231</a></span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px">manquehue@eurorentacar.cl</span> </p>
+                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                       
+                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                        <span class="text-third-color margin-left-20px trn">L-V: 08:30 a 18:30</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 09:00 a 14:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D: Cerrado</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+<!-- oficina -->
+<div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2846.2409625369223!2d-72.6462640014316!3d-38.92745661320408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614dec58f5d709b%3A0xfdcdf026ce8a1f31!2sAeropuerto%20Araucan%C3%ADa!5e0!3m2!1ses!2sar!4v1673379902446!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">TEMUCO  MEET&GREET AEROPUERTO</h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px trn">Aeropuerto La Araucanía</span> </p><br>
+                   
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px">temuco@eurorentacar.cl</span> </p>
+                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                        <span class="text-third-color margin-left-20px trn">L-V: 08:30 a 18:30</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 09:00 a 14:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D y Feriados: Cerrado</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+ <!-- oficina -->
+<div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194.51128603846107!2d-72.59154655414126!3d-38.73661825438939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614d3ac2ef5a457%3A0x4a6bc8b6ce3a9276!2sDA%20HOTEL%20-%20DIEGO%20DE%20ALMAGRO%20EXPRESS!5e0!3m2!1ses!2sar!4v1673379947164!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">TEMUCO  CIUDAD</h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px ">Av. San Andrés 37. Hotel Ibis
+                    </span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px">temuco@eurorentacar.cl</span> </p>
+                        <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                            <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                            <span class="text-third-color margin-left-20px trn">L-V: 08:30 a 18:30</span><br>
+                            <span class="text-third-color margin-left-20px trn">S: 09:00 a 14:00</span><br>
+                            <span class="text-third-color margin-left-20px trn">D y Feriados: Cerrado</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+               
+
+            </div>
+        </div>
+        <!--// container -->
+    </div>
+
+<!-- oficina -->
+<div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1883.1222708800622!2d-72.3262939787995!3d-37.4602134774518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966be78cab02f049%3A0x8cccd1a126130332!2sHotel%20Diego%20de%20Almagro%20Los%20%C3%81ngeles!5e0!3m2!1ses!2sar!4v1673380141586!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">LOS ÁNGELES   CIUDAD</h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px ">Av Las Industrias 510, Hotel Diego de Almagro
+                    </span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px"><a href="tel: +56 9 9207 9175">: +56 9 9207 9175</a></span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px">losangeles@eurorentacar.cl</span> </p>
+                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                       
+                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                        <span class="text-third-color margin-left-20px trn">L-V: 08:30 a 18:30</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 09:00 a 14:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D: Cerrado</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- oficina -->
+<div class="col-lg-6 margin-bottom-30px">
+    <div class="hotel-list background-white border border-grey-1">
+        <div class="hotel-thum">
+           
+            <div class="img-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d314.4164201788094!2d-73.0985640860188!3d-41.43379782867322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961819f9adb668c9%3A0xd48957cdad74f8a!2sEURO%20Rent%20a%20Car%20%7C%20Aeropuerto%20El%20Tepual!5e0!3m2!1ses!2sar!4v1673380197155!5m2!1ses!2sar" width="100%" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="padding-40px">
+            <h4 class="text-dark d-block text-uppercase text-medium font-weight-bold margin-tb-10px">PUERTO MONTT MEET & GREET AEROPUERTO
+            </h4>
+            <small class="text-uppercase text-extra-small  d-block">
+                    <p class="text-grey-4"><i class="fa fa-map-marker margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px ">Camino Aeropuerto El Tepual, Ruta 226 km 1078, Puerto Montt
+                    </span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-phone margin-right-5px"></i>
+                        <span class="text-third-color margin-right-5px"><a href="tel: +56 9 9207 9217">: +56 9 9207 9217 / +56 9 9207 9174</a></span> </p><br>
+                    <p class="text-grey-4"><i class="fa fa-envelope margin-right-5px"></i>
+                    <span class="text-third-color margin-right-5px">manquehue@eurorentacar.cl</span> </p>
+                    <p class="text-grey-4"><i class="fa fa-calendar margin-right-5px"></i>
+                       
+                        <span class="text-third-color margin-right-5px trn">Horario De Atención</span><br>
+                        <span class="text-third-color margin-left-20px trn">L-V: 08:00 a 22:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">S: 08:00 a 22:00</span><br>
+                        <span class="text-third-color margin-left-20px trn">D y Festivos: 09:00 a 20:00</span> </p>
+                </small>
+          
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+  
+
+
+    <!-- Footer -->
+ <footer class="text-center text-lg-left">
+    <div class="container">
+        <div class="row padding-tb-30px">
+            <div class="col-lg-6 sm-mb-35px">
+                <div class="about">
+                    <div class="logo margin-bottom-20px"><a href="index.html"><img src="images/logo-blanco.png" alt=""></a></div>
+                    <p class="trn">El arriendo de autos representa mayor eficiencia y rentabilidad. Tener flota propia es sinónimo de dinero parado.
+                        Nosotros nos encargamos de todo, tu auto siempre funcionará como uno nuevo, te ofrecemos excelentes beneficios y tarifas de acuerdo a los perfiles de utilización y necesidades de tu empresa.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 sm-mb-35px">
+                <ul class="footer-menu row margin-0px padding-0px list-unstyled">
+                    <li class="col-6  padding-tb-5px"><a href="nosotros.html" class="text-white trn">Nosotros</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="flota.html" class="text-white trn">Flota</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="oficinas.html" class="text-white trn">Oficinas</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="preguntas-frecuentes.html" class="text-white trn">Preguntas Frecuentes</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="terminos-y-condiciones.html" class="text-white trn">Términos & Condiciones</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-iquique.html" class="text-white trn">Sucursal Iquique</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-calama.html" class="text-white trn">Sucursal Calama</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-antofagasta.html" class="text-white trn">Sucursal Antofagasta</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-copiapo.html" class="text-white trn">Sucursal Copiapó</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-la-serena.html" class="text-white trn">Sucursal La Serena</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-Santiago.html" class="text-white trn">Sucursal Santiago</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-concepcion.html" class="text-white trn">Sucursal Concepción</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="sucursal-puerto-montt.html" class="text-white trn">Sucursal Puerto Montt</a></li>
+                   
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="row padding-tb-10px border-top-11 ">
+            <div class="col-lg-3">
+            
+            </div>
+            <div class="col-lg-6 m-auto">
+                   <p class="text-center"><span class="text-white">Euro Rent a Car</span> | @2023 <span class="trn">Todos los derechos reservados</span></p>
+            </div>
+            <div class="col-lg-3">
+                <ul class="social_link list-inline text-sm-center text-lg-right">
+                    <li class="list-inline-item"><a class="facebook" href="https://www.facebook.com/eurorentacar.cl 
+                        " target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a class="instagram" href="https://www.instagram.com/eurorentacar_cl
+                        " target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    
+                   
+                   
+                </ul>
+                <!-- // Social -->
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+    <!-- // Footer -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/sticky-sidebar.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  
+</body>
+
+</html>
